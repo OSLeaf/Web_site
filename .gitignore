@@ -1,3 +1,7 @@
+# Private folders
+public/images
+planning
+
 # Logs
 logs
 *.log
