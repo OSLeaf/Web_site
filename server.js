@@ -5,7 +5,19 @@ const path = require("path");
 const PORT = process.env.PORT || 3000;
 
 // Serve static files (CSS, images, JS)
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, 'public'), {
+    setHeaders: (res, path) => {
+        if (path.endsWith('.mp4')) {
+            res.setHeader('Content-Type', 'video/mp4');
+        }
+        if (path.endsWith('.jpg') || path.endsWith('.jpeg')) {
+            res.setHeader('Content-Type', 'image/jpeg');
+        }
+        if (path.endsWith('.png')) {
+            res.setHeader('Content-Type', 'image/png');
+        }
+    }
+}));
 
 // Homepage route
 app.get("/", (req, res) => {
