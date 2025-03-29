@@ -86,3 +86,11 @@ p {
 .active {
     background-color: #000000;
 }
+
+a {
+    color: rgb(148, 187, 253);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+}
