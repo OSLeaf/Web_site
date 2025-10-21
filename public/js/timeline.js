@@ -140,7 +140,7 @@ const eventRanges = [
   {
     title: "Event Tech - Teekkarispeksi",
     start: "2022-09-01",
-    end: "2024-09-30",
+    end: "2024-07-01",
     url: "https://teekkarispeksi.fi/",
     description:
       "I joined Teekkarispeksi's team of event technicians (Tekniikkasektori) that make student parties in Otaniemi possible",
@@ -191,7 +191,7 @@ const eventRanges = [
   },
   {
     title: "Tech Lead - Teekkarispeksi",
-    start: "2024-09-01",
+    start: "2024-07-01",
     end: "2025-12-31",
     url: "https://teekkarispeksi.fi/",
     description:
