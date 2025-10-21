@@ -5,7 +5,8 @@ const eventRanges = [
     start: "2015-01-01",
     end: "2015-12-31",
     url: "https://koovee.fi/suunnistus/",
-    description: "Created city map for local orienteering club and school",
+    description:
+      "Created map of Vuores municipality for use in the local school and my orienteering association",
   },
   {
     title: "TET - Suunnistajankauppa",
@@ -82,7 +83,7 @@ const eventRanges = [
     important: true,
   },
   {
-    title: "Civil Service - Radiation Safety",
+    title: "Civil Service - Radiation and Nuclear Safety Authority (STUK)",
     start: "2021-04-01",
     end: "2021-09-30",
     url: "https://stuk.fi/etusivu",
@@ -133,7 +134,7 @@ const eventRanges = [
     url: "https://www.suunnistajankauppa.fi/index.html",
   },
   {
-    title: "Assistant - Aalto University",
+    title: "Course Assistant - Aalto University",
     start: "2023-09-01",
     end: "2023-12-31",
     url: "https://www.aalto.fi/fi",
@@ -164,7 +165,7 @@ const eventRanges = [
     url: "https://www.suunnistajankauppa.fi/index.html",
   },
   {
-    title: "Assistant - Aalto University",
+    title: "Course Assistant - Aalto University",
     start: "2024-09-01",
     end: "2024-12-31",
     url: "https://www.aalto.fi/fi",
@@ -216,7 +217,7 @@ const eventRanges = [
     important: true,
   },
   {
-    title: "Assistant - Aalto University",
+    title: "Course Assistant - Aalto University",
     start: "2025-09-01",
     end: "2025-12-31",
     url: "https://www.aalto.fi/fi",
@@ -232,7 +233,7 @@ const eventRanges = [
   },
 ];
 
-const timelineHeight = 1850;
+const timelineHeight = 1900;
 const timelineContainer = document.getElementById("timeline-container");
 const eventSectionsDiv = document.getElementById("event-sections");
 
