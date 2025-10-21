@@ -25,7 +25,7 @@ const eventRanges = [
     important: true,
   },
   {
-    title: "Jukola - Suunnistajankauppa",
+    title: "Jukolan viesti - Suunnistajankauppa",
     start: "2016-06-01",
     end: "2016-06-02",
     url: "https://www.suunnistajankauppa.fi/index.html",
@@ -33,7 +33,7 @@ const eventRanges = [
       "Huge orienteering relay I take part each year. When I'm not running the relay I'm selling shoes in Suunnistajankauppa",
   },
   {
-    title: "Jukola - Suunnistajankauppa",
+    title: "Jukolan viesti - Suunnistajankauppa",
     start: "2017-06-01",
     end: "2017-06-02",
     url: "https://www.suunnistajankauppa.fi/index.html",
@@ -47,7 +47,7 @@ const eventRanges = [
       "I was part of a team that made sound and light tech possible in any school event",
   },
   {
-    title: "Jukola - Suunnistajankauppa",
+    title: "Jukolan viesti - Suunnistajankauppa",
     start: "2018-06-01",
     end: "2018-06-02",
     url: "https://www.suunnistajankauppa.fi/index.html",
@@ -68,7 +68,7 @@ const eventRanges = [
     description: "I became the lead of the event tech team.",
   },
   {
-    title: "Jukola - Suunnistajankauppa",
+    title: "Jukolan viesti - Suunnistajankauppa",
     start: "2019-06-01",
     end: "2019-06-02",
     url: "https://www.suunnistajankauppa.fi/index.html",
@@ -82,12 +82,6 @@ const eventRanges = [
     important: true,
   },
   {
-    title: "Jukola - Suunnistajankauppa",
-    start: "2020-06-01",
-    end: "2020-06-02",
-    url: "https://www.suunnistajankauppa.fi/index.html",
-  },
-  {
     title: "Civil Service - Radiation Safety",
     start: "2021-04-01",
     end: "2021-09-30",
@@ -97,7 +91,7 @@ const eventRanges = [
     important: true,
   },
   {
-    title: "Jukola - Suunnistajankauppa",
+    title: "Jukolan viesti - Suunnistajankauppa",
     start: "2021-06-01",
     end: "2021-06-02",
     url: "https://www.suunnistajankauppa.fi/index.html",
@@ -111,10 +105,18 @@ const eventRanges = [
     important: true,
   },
   {
-    title: "Jukola - Suunnistajankauppa",
+    title: "Jukolan viesti - Suunnistajankauppa",
     start: "2022-06-01",
     end: "2022-06-02",
     url: "https://www.suunnistajankauppa.fi/index.html",
+  },
+  {
+    title: "Network crew - Junction 2022",
+    start: "2022-11-04",
+    end: "2022-11-06",
+    url: "https://hackjunction.com/",
+    description:
+      "I was part of the team that made sure that everyone in the hackathon had access to the internet and LAN access to each other if needed",
   },
   {
     title: "Event Tech - Teekkarispeksi",
@@ -125,7 +127,7 @@ const eventRanges = [
       "I joined Teekkarispeksi's team of event technicians (Tekniikkasektori) that make student parties in Otaniemi possible",
   },
   {
-    title: "Jukola - Suunnistajankauppa",
+    title: "Jukolan viesti - Suunnistajankauppa",
     start: "2023-06-01",
     end: "2023-06-02",
     url: "https://www.suunnistajankauppa.fi/index.html",
@@ -156,7 +158,7 @@ const eventRanges = [
       "In 2023 and 2024 I worked as a international tutor for the Guild of Electrical Enginering",
   },
   {
-    title: "Jukola - Suunnistajankauppa",
+    title: "Jukolan viesti - Suunnistajankauppa",
     start: "2024-06-01",
     end: "2024-06-02",
     url: "https://www.suunnistajankauppa.fi/index.html",
@@ -200,7 +202,7 @@ const eventRanges = [
     url: "https://sahkoinsinoorikilta.fi/",
   },
   {
-    title: "Jukola - Suunnistajankauppa",
+    title: "Jukolan viesti - Suunnistajankauppa",
     start: "2025-06-01",
     end: "2025-06-02",
     url: "https://www.suunnistajankauppa.fi/index.html",
@@ -230,7 +232,7 @@ const eventRanges = [
   },
 ];
 
-const timelineHeight = 1700;
+const timelineHeight = 1850;
 const timelineContainer = document.getElementById("timeline-container");
 const eventSectionsDiv = document.getElementById("event-sections");
 
@@ -339,6 +341,7 @@ eventRanges.forEach((event) => {
   bar.style.backgroundColor = colorMap[event.title];
   bar.style.border = important ? `2px solid ${barBorderColor}` : "none";
   bar.style.borderRadius = "3px";
+  bar.setAttribute("data-tooltip", `${event.title}`);
 
   timelineContainer.appendChild(bar);
 });
@@ -369,7 +372,7 @@ years.forEach((year) => {
 
   const yearLabel = document.createElement("div");
   yearLabel.className = "year-label";
-  yearLabel.innerText = year;
+  yearLabel.innerHTML = `${year} <span class="year-arrow">⟶</span>`;
   yearSection.appendChild(yearLabel);
 
   uniqueEvents

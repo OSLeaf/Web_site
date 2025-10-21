@@ -22,7 +22,7 @@ h1.timeline-title {
     top: 0;
     width: 4px;
     background: #555;
-    height: 1700px;
+    height: 1850px;
 }
 
 .month-label {
@@ -70,4 +70,24 @@ h1.timeline-title {
     color: #555;
     margin-left: 8px;
     margin-bottom: 8px;
+}
+
+.event-bar {
+    position: absolute;
+    cursor: pointer;
+}
+
+.event-bar:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #570000;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
 }
