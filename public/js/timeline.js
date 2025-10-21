@@ -76,16 +76,34 @@ const eventRanges = [
   },
   {
     title: "Summer Job - Saarioinen",
-    start: "2020-05-01",
-    end: "2020-08-31",
+    start: "2020-05-25",
+    end: "2020-08-16",
     url: "https://www.saarioinen.fi/",
     description: "Summer work. Mostly consistet of moving boxes around",
     important: true,
   },
   {
+    title: "Conscript - Finnish defence force",
+    start: "2021-07-07",
+    end: "2021-11-22",
+    url: "https://intti.fi/etusivu",
+    description:
+      "I served half a year in the Finnish army in air reconnaissance unit. I got promoted to non-commissioned officer student, but was just under the cut for officer training. This led to a decission that I could use my time better in a civilian service.",
+    important: true,
+  },
+  {
+    title: "Postman - Posti",
+    start: "2021-12-10",
+    end: "2022-03-30",
+    url: "https://www.posti.fi/",
+    description:
+      "I worked few months as a postman between my conscription and before my Civilian Service started.",
+    important: true,
+  },
+  {
     title: "Civil Service - Radiation and Nuclear Safety Authority (STUK)",
-    start: "2021-04-01",
-    end: "2021-09-30",
+    start: "2022-04-04",
+    end: "2022-09-30",
     url: "https://stuk.fi/etusivu",
     description:
       "I developed with my coworker a database to store nuclear waste information after the final disposal. \n Link to he published scientific paper about it can be found on the front page.",
@@ -99,8 +117,8 @@ const eventRanges = [
   },
   {
     title: "Summer Job - Avarn Security",
-    start: "2022-06-01",
-    end: "2022-09-30",
+    start: "2023-06-01",
+    end: "2023-09-30",
     url: "https://www.avarnsecurity.fi/",
     description: "I worked as a security guard at Avarn Security",
     important: true,
@@ -233,7 +251,7 @@ const eventRanges = [
   },
 ];
 
-const timelineHeight = 1900;
+const timelineHeight = 2100;
 const timelineContainer = document.getElementById("timeline-container");
 const eventSectionsDiv = document.getElementById("event-sections");
 
