@@ -42,6 +42,11 @@ app.get("/test", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "test.html"));
 });
 
+app.use((req, res) => {
+  console.log("404 route triggered:", req.originalUrl);
+  res.status(404).sendFile(path.resolve(__dirname, "views", "404.html"));
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
