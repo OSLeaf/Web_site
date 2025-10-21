@@ -152,7 +152,7 @@ const eventRanges = [
   {
     title: "KV ISO - Guild of Electrical Enginering",
     start: "2023-09-01",
-    end: "2023-12-31",
+    end: "2024-04-01",
     url: "https://sahkoinsinoorikilta.fi/",
     description:
       "In 2023 and 2024 I worked as a international tutor for the Guild of Electrical Enginering",
@@ -198,7 +198,7 @@ const eventRanges = [
   {
     title: "KV ISO - Guild of Electrical Enginering",
     start: "2024-09-01",
-    end: "2024-12-31",
+    end: "2025-04-01",
     url: "https://sahkoinsinoorikilta.fi/",
   },
   {
